@@ -1,0 +1,17 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}My TODO List{% endblock %}
+{% block navbar %}
+    <nav class="navbar navbar-inverse container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="{{ url_for('index') }}">显示</a>
+        </div>
+    </nav>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <!-- body block -->
+        {% block page_content %} {% endblock %}
+    </div>
+{% endblock %}
